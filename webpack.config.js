@@ -31,8 +31,8 @@ var config = {
 	    // 這邊指定 webpack 不要處理 react 這個檔案
 	    noParse: [],
 		loaders: [
-			{test: /\.jsx$/ , loader: 'jsx-loader'},
-			// {test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader'},
+			{test: /\.jsx$/ , loader: 'jsx'},
+			{test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
 			// {test: /\.(png|woff|otf)$/, loader: 'url-loader'}
 			// {test: /\.css$/ , loader: 'style-loader!css-loader'}
 		]
