@@ -1,5 +1,9 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 var bower_dir = __dirname + '/resources/assets/bower_components'
+
+
 
 var config = {
 	addVendor: function (name, path) {
@@ -8,7 +12,7 @@ var config = {
 	},
 	entry: {
 		app: [
-		'webpack/hot/dev-server',,'./resources/assets/jsx/app.jsx'],
+		'webpack/hot/dev-server','./resources/assets/jsx/app.jsx'],
 		app2: [
 			'./resources/assets/jsx/app2.jsx'
 		],
@@ -27,15 +31,26 @@ var config = {
 		filename: '[name].js',
 		publicPath: 'http://localhost:8080/'
 	},
+	devtool: 'eval',
 	module: {
 	    // 這邊指定 webpack 不要處理 react 這個檔案
 	    noParse: [],
 		loaders: [
 			{test: /\.jsx$/ , loader: 'jsx'},
-			{test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
+			{
+				test: /\.scss$/, 
+				loader: 'style!css!sass?sourceMap'
+
+				// webpack -p 時註解上面開下面
+				//loader: ExtractTextPlugin.extract("style", "css!sass?sourceMap")
+			},
 			// {test: /\.(png|woff|otf)$/, loader: 'url-loader'}
 			// {test: /\.css$/ , loader: 'style-loader!css-loader'}
 		]
+	},
+
+	devServer: {
+
 	},
 
 	// We add a plugin called CommonsChunkPlugin that will take the vendors chunk
@@ -43,6 +58,7 @@ var config = {
 	// of the entry, "vendors"
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+		new ExtractTextPlugin("[name].css")
 	],
 };
 
