@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base public --hot",
+    "deploy": "NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  },
+  "dependencies": {
+    "jsx-loader": "^0.13.2",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.0"
+  }
+}

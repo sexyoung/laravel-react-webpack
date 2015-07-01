@@ -1,0 +1,25 @@
+{
+  "name": "laravel-react-webpack",
+  "version": "0.0.0",
+  "authors": [
+    "寫詩羊 <Habuche@gmail.com>"
+  ],
+  "description": "laravel + react on webpack hot dev server",
+  "keywords": [
+    "larvel",
+    "react",
+    "webpack"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}
