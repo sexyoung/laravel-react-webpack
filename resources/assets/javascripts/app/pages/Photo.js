@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
 
-export default class Home extends React.Component {
+export default class Photo extends React.Component {
 	render() {
 		return (
-			<div className="home">
+			<div className="about">
 				<Header />
-				Home
+				Photo
 			</div>
 		);
 	}

@@ -2,6 +2,8 @@ import React from "react";
 import { Route, DefaultRoute } from "react-router";
 // import App from "../App";
 import Home from "../app/pages/Home";
+import About from "../app/pages/About";
+import Photo from "../app/pages/Photo";
 
 // import TemplateSelectionPage from './pages/TemplateSelectionPage';
 // import PersonalInfoPage from './pages/PersonalInfoPage';
@@ -9,9 +11,8 @@ import Home from "../app/pages/Home";
 const routes = (
   <Route name="home" path='/'>
     <DefaultRoute handler={Home} />
-    {/* <Route name="markupEditor" path="markup-editor" handler={MarkupEditor} />*/}
-	{/* 這邊我先幫小josh改到這個路徑 */}
-    {/* <Route name="templateSelectionPage" path="/templateSelectionPage" handler={TemplateSelectionPage} /> */}
+    <Route name="about" path="about" handler={About} />
+    <Route name="photo" path="photo" handler={Photo} />
   </Route>
 );
 
