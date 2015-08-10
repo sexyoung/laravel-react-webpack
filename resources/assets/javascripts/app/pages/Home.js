@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+require("../../../stylesheets/home.scss");
 
 export default class Home extends React.Component {
 	render() {
