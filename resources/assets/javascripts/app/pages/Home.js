@@ -17,7 +17,7 @@ export class AddUser extends React.Component {
 		e.preventDefault();
 		var name = React.findDOMNode(this.refs.name).value;
 		if(name!=="")
-			UserActions.create(name);
+			UserStore.postUser(name);
 
 		React.findDOMNode(this.refs.name).value = "";
 	}

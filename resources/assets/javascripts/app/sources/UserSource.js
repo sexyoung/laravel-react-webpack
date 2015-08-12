@@ -28,5 +28,22 @@ export default  {
 			error: UserActions.fetchFailed,
 			loading: UserActions.loading
 		}
+	},
+	postUser() {
+		return {
+			remote(state, name){
+				return new Promise((resolve, reject) => {
+					state.users.unshift({id: 0, name: name});
+					if(true){
+						resolve(state.users);
+					}
+					else
+						reject("broken errors.");
+				});
+			},
+			success: UserActions.fetched,
+			error: UserActions.fetchFailed,
+			loading: UserActions.loading
+		}
 	}
 }

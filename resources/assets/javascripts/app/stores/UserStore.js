@@ -17,10 +17,6 @@ class UserStore {
 	onLoading(){
 		this.users = [];
 	}
-
-	onCreate(newName){
-		console.warn(newName);
-	}
 }
 
 export default alt.createStore(UserStore, "UserStore");
