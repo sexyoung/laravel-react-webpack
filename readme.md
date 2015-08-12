@@ -4,12 +4,12 @@
 ```
 git clone https://github.com/sexyoung/laravel-react-webpack.git
 sudo composer install
+php artisan serve --host=127.0.0.1
 ```
 
 setting .env
 
 ```
-npm run dev
-bower install
-npm run dev
+npm install
+npm start
 ```
