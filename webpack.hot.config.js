@@ -5,7 +5,7 @@ const webpack = require("webpack");
 
 // We're using the bootstrap-sass loader.
 // See: https://github.com/justin808/bootstrap-sass-loader
-config.entry.push("webpack-dev-server/client?http://localhost:4000",
+config.entry.push("webpack-dev-server/client?http://localhost:4444",
   "webpack/hot/dev-server"
   // "./scripts/webpack_only"
 
