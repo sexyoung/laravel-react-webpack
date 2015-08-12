@@ -12,9 +12,9 @@ var config = {
 	},
 	entry: {
 		app: [
-		'webpack/hot/dev-server','./resources/assets/jsx/app.jsx'],
+		'webpack/hot/dev-server','./resources/assets/javascripts/app.jsx'],
 		app2: [
-			'./resources/assets/jsx/app2.jsx'
+			'./resources/assets/javascripts/app2.jsx'
 		],
 		vendors: ['react']
 		// Home: ['./app/Home.jsx'],
