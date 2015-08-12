@@ -72,6 +72,9 @@ export default class Home extends React.Component {
 
 	componentDidMount() {
 	  UserStore.fetchUsers();
+	  $.get('/api/test', function(json) {
+	  	console.warn(json);
+	  });
 	}
 
 	render() {

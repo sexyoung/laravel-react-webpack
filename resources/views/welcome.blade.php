@@ -37,12 +37,12 @@
         {{-- <link rel="stylesheet" href="/js/app.css"> --}}
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app"></div>{{--
         <script src="//localhost:8080/webpack-dev-server.js"></script>
         <script src="//localhost:8080/vendors.js"></script>
         <script src="//localhost:8080/app.js"></script>
 
-{{--         <script src="/js/vendors.js"></script>
+         <script src="/js/vendors.js"></script>
         <script src="/js/app.js"></script> --}}
         <div class="container">
             <div class="content">

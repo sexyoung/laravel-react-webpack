@@ -8,7 +8,7 @@ var server = new WebpackDevServer(webpack(config), {
 	noInfo: false,
 	stats: {colors: true},
 	proxy: {
-		"/api/*": "http://localhost:8000/"
+		"/api/*": "http://127.0.0.1:8000/"
 	}
 });
 
@@ -18,5 +18,5 @@ server.listen(4444, "localhost", function(err) {
     console.log(err);
   }
 
-  console.log("Listening at localhost:4000...");
+  console.log("Listening at localhost:4444...");
 });
