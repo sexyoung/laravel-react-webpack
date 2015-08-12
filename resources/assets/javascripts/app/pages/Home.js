@@ -27,7 +27,7 @@ export class AddUser extends React.Component {
 
     $.get("/api/test", (json)=>{
       console.log(json);
-    })
+    });
 
 		return (
 			<div>
