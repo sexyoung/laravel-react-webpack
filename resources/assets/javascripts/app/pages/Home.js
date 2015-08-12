@@ -1,4 +1,3 @@
-import $ from "jQuery";
 import React from "react";
 import AltContainer from "alt/AltContainer";
 import UserStore from "../stores/UserStore";
@@ -24,11 +23,6 @@ export class AddUser extends React.Component {
 	}
 
 	render() {
-
-    $.get("/api/test", (json)=>{
-      console.log(json);
-    });
-
 		return (
 			<div>
 				<h1> add user </h1>
@@ -72,9 +66,6 @@ export default class Home extends React.Component {
 
 	componentDidMount() {
 	  UserStore.fetchUsers();
-	  $.get('/api/test', function(json) {
-	  	console.warn(json);
-	  });
 	}
 
 	render() {
