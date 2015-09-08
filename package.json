@@ -26,7 +26,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "deploy": "NODE_ENV=production webpack -p"
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "dependencies": {
     "alt": "^0.17.1",
